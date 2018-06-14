@@ -14,3 +14,4 @@ class StudentRecord(models.Model):
         [('A+', 'A+ve'), ('B+', 'B+ve'), ('O+', 'O+ve'), ('AB+', 'AB+ve'),
          ('A-', 'A-ve'), ('B-', 'B-ve'), ('O-', 'O-ve'), ('AB-', 'AB-ve')],
         string='Blood Group')
+    nationality = fields.Many2one('res.country', string='Nationality')
